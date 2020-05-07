@@ -1,103 +1,142 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Obsequiarte</title>
-    <!-- Latest compiled and minified CSS -->
-    
-    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-   
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-   
-    <script src="https://kit.fontawesome.com/06fb214df3.js" crossorigin="anonymous"></script>
-    
-    <link rel="stylesheet" href="/css/estilo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obsequiarte</title>
+  <!-- Latest compiled and minified CSS -->
 
-    
-  
-</head> 
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <script src="https://kit.fontawesome.com/06fb214df3.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/css/estilo.css">
+
+
+
+</head>
+
 <body>
- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-     
-  <div class="container">
-    <h3>Obsequiarte</h3>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <div class="demo">
-            <form class="form-search content-search navbar-form" action="/buscar" method="get">
-              <div class="input-group">
-                <input placeholder="Buscar" class="form-control form-text" type="search"  name="dato" size="30"
-                  maxlength="128" required />
-                <span class="input-group-btn">
-                  <button type="submit" class="btn btn-danger"><span class="icon glyphicon glyphicon-search"
-                      aria-hidden="true"></span><i class="fa fa-search fa-lg">&nbsp;</i></button>&nbsp;
-                </span>
-              </div>
-            </form>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="quienes_somos" href="">Quienes somos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="productos" href="">Producto</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="">Contacto</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="iniciar_sesion" href="">Iniciar sesion</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="registrarme" href="">Registrarme</a>
-        </li>
+    <div class="container">
+      <h3 style="color: white;">Obsequiarte</h3>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <div class="demo">
+              <form class="form-search content-search navbar-form" action="/buscar" method="get">
+                <div class="input-group">
+                  <input placeholder="Buscar" class="form-control form-text" type="search" name="dato" size="30"
+                    maxlength="128" required />
+                  <span class="input-group-btn">
+                    <button type="submit" class="btn btn-danger"><span class="icon glyphicon glyphicon-search"
+                        aria-hidden="true"></span><i class="fa fa-search fa-lg">&nbsp;</i></button>&nbsp;
+                  </span>
+                </div>
+              </form>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="quienes_somos" href="">Quienes somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="productos" href="">Producto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="iniciar_sesion" href="">Iniciar sesion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="registrarme" href="">Registrarme</a>
+          </li>
         </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" >
+    <div class="row">
+      <div class=" col-md-12">
+        <img src="img/Obsequiarte_logo.png">
+      </div>
     </div>
   </div>
- </nav>
-
-<div class="container" id="contenedor">
- <div class="row">
-  <div class=" col-md-12">
-     
-       <img src="img/Obsequiarte_logo.png" >
-
-
-     
+  <div class="container" id="contenedor">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="p-4">Lista de obsequios</h3>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="http://imgfz.com/i/bJ0WwxA.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Desayuno Sorpresa</h5>
+            <p class="card-text">Grande para enamorar a esa persona</p>
+            <a href="#" class="btn btn-primary">Saber mas</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="http://imgfz.com/i/9s2k5ol.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Desayuno Amoroso</h5>
+            <p class="card-text">Con este cereal tu pareja te amara</p>
+            <a href="#" class="btn btn-primary">Saber mas</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="http://imgfz.com/i/mdJ275A.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Desayuno Increible</h5>
+            <p class="card-text">Buena Eleccion para un desayuno
+              </p>
+            <a href="#" class="btn btn-primary">Saber mas</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-</div>
 
-<footer class="footer">
+
+
+  <footer class="footer">
     <div class="container">
-    <p class="text-muted">Programacion Aplicaciones Web - 2020</p>
-   </div>
- </footer>
+      <p class="text-muted">Programacion Aplicaciones Web - 2020</p>
+    </div>
+  </footer>
 
-   <!-- Latest compiled and minified JavaScript -->
-   
-   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-   <script src="js/funcionalidad.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
   
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
- 
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+    <script src="js/funcionalidad.js"></script>
+
 </body>
+
 </html>
