@@ -5,46 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obsequiarte</title>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     
-    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   
+    <script src="https://kit.fontawesome.com/06fb214df3.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="/css/estilo.css">
 
     
   
 </head> 
 <body>
- <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #CEECE9;">
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
      
-   <div class="container">
-       
-    <div id="navbar" class="collapse navbar-collapse ml-auto ">
-      
-        <ul class="nav navbar-nav">
-           <li><h3 class="m-4">Obsequiarte</h3></li>
-           <li><a href="index.html">Inicio</a></li>
-           <li><a href="#">Sede</a></li>
-           <li><a id="quienes_somos" href="#">Quienes somos</a></li>
-           <li><a id="productos" href="#">Productos</a></li>
-          </li>
+  <div class="container">
+    <h3>Obsequiarte</h3>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <div class="demo">
+            <form class="form-search content-search navbar-form" action="/buscar" method="get">
+              <div class="input-group">
+                <input placeholder="Buscar" class="form-control form-text" type="search"  name="dato" size="30"
+                  maxlength="128" required />
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-danger"><span class="icon glyphicon glyphicon-search"
+                      aria-hidden="true"></span><i class="fa fa-search fa-lg">&nbsp;</i></button>&nbsp;
+                </span>
+              </div>
+            </form>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="quienes_somos" href="">Quienes somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="productos" href="">Producto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="iniciar_sesion" href="">Iniciar sesion</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="registrarme" href="">Registrarme</a>
+        </li>
         </ul>
-        <ul class="nav navbar-nav justify-content-right">
-          <li><a id="iniciar_sesion" href="#">Iniciar sesion</a></li>
-           <li><a id="registrarme" href="#">Registrarme</a></li>
-        </ul>
-       </div>
     </div>
+  </div>
  </nav>
+
 <div class="container" id="contenedor">
  <div class="row">
-  <div class="col-xs-12 col-sm-9">
-     <div class="page-header">
-       <img src="img/Obsequiarte_logo.png" alt="logo" width="100%" height="2%">
+  <div class=" col-md-12">
+     
+       <img src="img/Obsequiarte_logo.png" >
 
 
-     </div>
+     
   </div>
 </div>
 </div>
@@ -57,9 +87,17 @@
 
    <!-- Latest compiled and minified JavaScript -->
    
-   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
    <script src="js/funcionalidad.js"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
  
 </body>
 </html>
